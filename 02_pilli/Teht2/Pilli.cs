@@ -10,6 +10,5 @@ internal class Pilli
     public void Soi()
     {
         Console.WriteLine(aani);
-
     }
 }
