@@ -6,7 +6,7 @@ namespace _03_Ovi
     {
         static void Main(string[] args)
         {
-            Ovi alexander = new Ovi(); 
+            Ovi alexander = new Ovi("Who's there?"); 
             alexander.Koputa(); 
             alexander.Koputa();    
         }
