@@ -2,7 +2,7 @@
 
 Luo uusi projekti tai käytä annettua projektia.
 
-1. Luo projektiin luokka Mittari. Mittarilla on oliomuuttuja private int _mitta, parametriton konstruktori (asettaa muuttujan mitta alkuarvoksi 0), sekä seuraavat neljä metodia:
+1. Luo projektiin luokka Mittari. Mittarilla on oliomuuttuja private int _mitta, parametriton konstruktori (asettaa muuttujan mitta alkuarvoksi 0), sekä seuraavat neljä metodia:  
 	a. Metodi public void Lisaa() kasvattaa oliomuuttujan _mitta arvoa yhdellä. Ei kasvata arvoa yli viiden.  
 	b. Metodi public void Vahenna() vähentää oliomuuttujan _mitta arvoa yhdellä. Ei vähennä arvoa negatiiviseksi.  
 	c. Metodi public int Mitta() palauttaa oliomuuttujan _mitta arvon.  
