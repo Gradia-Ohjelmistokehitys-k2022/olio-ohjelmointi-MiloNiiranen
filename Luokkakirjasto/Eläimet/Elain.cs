@@ -4,20 +4,43 @@ namespace Eläimet
 {
     public class Elain
     {
-        private string _nimi;
+        protected string _nimi;
         private int _ika;
         private bool _onlihansyoja;
+
+   
+        public Elain(int maksimiIka)
+        {
+            _ika= Tool.GiveNumber(maksimiIka);
+            if (maksimiIka == 10)
+            {
+                _nimi = "kisu";
+            }
+            else
+            {
+                _nimi = "koira";
+            }
+
+        }
+        public Elain(string nimi, int ika, bool lihis)
+        {
+            this._ika = ika;
+            this._nimi = nimi;
+            _onlihansyoja= lihis;
+        }
+
+
         public bool PalautaOnLihanSyoja()
         {
             return _onlihansyoja;
         }
     
-        public string PalautaKissanNimi()
+        public string PalautaNimi()
         {
             return _nimi;
         }
 
-        public int PalautaKissanIka()
+        public int PalautaIka()
         {
             return _ika;
         }
@@ -33,18 +56,9 @@ namespace Eläimet
                 return true;
             }
         }
-        public bool AsetaKissanNimi(string uusinimi)
+        public void AsetaNimi(string uusinimi)
         {
-            string pienennetty = uusinimi.ToUpper();
-            if (pienennetty != "HILDA")
-            {
-                _nimi = uusinimi;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            
         }
 
         public override string ToString()
