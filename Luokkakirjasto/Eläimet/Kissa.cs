@@ -2,16 +2,24 @@
 
 namespace Eläimet
 {
+
     public class Kissa:Elain
     {
-        public Kissa() : base(10)
-        {
+        string _kehräys;
 
+        public Kissa(string voice) : base(10)
+        {
+            _kehräys = voice;
         }
 
-        public Kissa(int age, string name, bool carnivore) : base( name, age, carnivore)
+        public Kissa(int age, string name, bool carnivore, string voice) : base( name, age, carnivore)
         {
-            
+            _kehräys = voice;
+        }
+
+        public void kehraa()
+        {
+            Console.WriteLine(_kehräys + _kehräys);
         }
     }
 }
