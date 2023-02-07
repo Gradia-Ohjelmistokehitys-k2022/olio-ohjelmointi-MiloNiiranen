@@ -4,9 +4,6 @@ namespace Eläimet
 {
     public class Koira:Elain
     {
-<<<<<<< HEAD
-      
-=======
         string _haukku;
 
         public Koira(string voice) : base(15)
@@ -23,6 +20,5 @@ namespace Eläimet
         {
             Console.WriteLine(_haukku + _haukku);
         }
->>>>>>> c76d2422d74d6205e047b56cb99873de86a87024
     }
 }

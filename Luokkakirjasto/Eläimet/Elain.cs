@@ -58,12 +58,7 @@ namespace Eläimet
         }
         public void AsetaNimi(string uusinimi)
         {
-<<<<<<< HEAD
             uusinimi = _nimi;
-    
-=======
-            
->>>>>>> c76d2422d74d6205e047b56cb99873de86a87024
         }
 
         public override string ToString()
