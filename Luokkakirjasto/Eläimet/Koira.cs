@@ -2,9 +2,8 @@
 
 namespace Eläimet
 {
-    public class Koira
+    public class Koira:Elain
     {
-        private int _ika;
-        private string _nimi;
+      
     }
 }

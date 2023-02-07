@@ -12,12 +12,12 @@ namespace Eläimet
             return _onlihansyoja;
         }
     
-        public string PalautaKissanNimi()
+        public string PalautaNimi()
         {
             return _nimi;
         }
 
-        public int PalautaKissanIka()
+        public int PalautaIka()
         {
             return _ika;
         }
@@ -33,18 +33,10 @@ namespace Eläimet
                 return true;
             }
         }
-        public bool AsetaKissanNimi(string uusinimi)
+        public void AsetaNimi(string uusinimi)
         {
-            string pienennetty = uusinimi.ToUpper();
-            if (pienennetty != "HILDA")
-            {
-                _nimi = uusinimi;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            uusinimi = _nimi;
+    
         }
 
         public override string ToString()

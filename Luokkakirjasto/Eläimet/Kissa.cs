@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Data.SqlTypes;
 
 namespace Eläimet
 {
-    public class Kissa
+    public class Kissa:Elain
     {
-        private int _ika;
-        private string _nimi;
+        
     }
 }
