@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
+<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elaimet", "Elaimet.csproj", "{6B26F018-425E-4CA5-9F98-D4840494B543}"
+=======
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eläimet", "Eläimet.csproj", "{6B26F018-425E-4CA5-9F98-D4840494B543}"
+>>>>>>> c76d2422d74d6205e047b56cb99873de86a87024
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -8,8 +8,8 @@ namespace Teht9
         static void Main(string[] args)
         {
 
-            Eläimet.Kissa koe = new Kissa();
-            Console.WriteLine(koe.nimi);
+            Eläimet.Kissa moi = new Kissa();
+
         }
     }
 }
