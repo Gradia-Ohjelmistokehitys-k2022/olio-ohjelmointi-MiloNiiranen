@@ -8,6 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Reference Include="Elaimet">
+      <HintPath>..\..\Luokkakirjasto\Eläimet\bin\Debug\net6.0\Elaimet.dll</HintPath>
+    </Reference>
     <Reference Include="Eläimet">
       <HintPath>..\..\Luokkakirjasto\Eläimet\bin\Debug\net6.0\Eläimet.dll</HintPath>
     </Reference>

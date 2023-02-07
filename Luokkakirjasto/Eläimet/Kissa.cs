@@ -1,13 +1,8 @@
 ﻿using System;
 
-namespace Eläimet
+namespace Elaimet
 {
-    public class Kissa : Elain
-    {
-
-
-
-        public class Kissa : Elain
+        public class Kissa : Nisakkaat
         {
             string _kehräys;
 
@@ -27,5 +22,4 @@ namespace Eläimet
             }
 
         }
-    }
 }
