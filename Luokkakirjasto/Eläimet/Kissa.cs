@@ -1,25 +1,25 @@
 ﻿using System;
 
-namespace Eläimet
+namespace Elaimet
 {
-
-    public class Kissa:Elain
-    {
-        string _kehräys;
-
-        public Kissa(string voice) : base(10)
+        public class Kissa : Nisakkaat
         {
-            _kehräys = voice;
-        }
+            string _kehräys;
 
-        public Kissa(int age, string name, bool carnivore, string voice) : base( name, age, carnivore)
-        {
-            _kehräys = voice;
-        }
+            public Kissa(string voice) : base(10)
+            {
+                _kehräys = voice;
+            }
 
-        public void kehraa()
-        {
-            Console.WriteLine(_kehräys + _kehräys);
+            public Kissa(int age, string name, bool carnivore, string voice) : base(name, age, carnivore)
+            {
+                _kehräys = voice;
+            }
+
+            public void kehraa()
+            {
+                Console.WriteLine(_kehräys + _kehräys);
+            }
+
         }
-    }
 }

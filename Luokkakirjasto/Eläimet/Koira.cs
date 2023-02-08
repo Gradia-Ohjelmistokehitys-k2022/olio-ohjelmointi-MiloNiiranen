@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Eläimet
+namespace Elaimet
 {
-    public class Koira:Elain
+    public class Koira:Nisakkaat
     {
         string _haukku;
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Eläimet
+namespace Elaimet
 {
     internal class Tool
     {

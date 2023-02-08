@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Data.SqlTypes;
 
-namespace Eläimet
+namespace Elaimet
 {
     public class Elain
     {
@@ -58,7 +59,7 @@ namespace Eläimet
         }
         public void AsetaNimi(string uusinimi)
         {
-            
+            _nimi = uusinimi;
         }
 
         public override string ToString()
@@ -70,12 +71,17 @@ namespace Eläimet
 
             else
             {
-                return " nimi on " + _nimi + " ja hän on " + _ika + " vuotias ja syö jotain";
+                return " nimi on " + _nimi + " ja hän on " + _ika + " vuotias ja ei syö lihaa";
             }
         }
-        public void AsetaOnLihansyoja()
+        public bool AsetaOnLihansyoja()
         {
-
+            if (_onlihansyoja)
+            {
+                return true;
+            }
+            else
+            {  return false;}
         }
 
     }

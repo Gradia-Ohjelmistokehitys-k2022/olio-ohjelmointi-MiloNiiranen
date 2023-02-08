@@ -1,4 +1,5 @@
 ﻿using Eläimet;
+
 Kissa uudempikissa = new Kissa("hrrr ");
 uudempikissa.AsetaNimi("Norbelo");
 uudempikissa.AsetaIka(8);
@@ -14,3 +15,6 @@ uudempikoira.PalautaOnLihanSyoja();
 
 Console.WriteLine(uudempikoira);
 uudempikoira.Haukkuu();
+
+
+
