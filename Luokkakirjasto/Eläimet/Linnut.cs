@@ -1,12 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Elaimet
 {
-    internal class Class1
-    {
+    public class Linnut : Elain
+    { 
+
+
+        public Linnut(int maksimiIka) : base(maksimiIka)
+        {
+        }
+
+        public Linnut(string nimi, int ika, bool lihis) : base(nimi, ika, lihis)
+        {
+        }
     }
 }

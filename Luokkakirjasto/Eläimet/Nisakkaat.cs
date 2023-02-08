@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Elaimet
 {
-    internal class Class1
+    public class Nisakkaat : Elain
     {
+        public Nisakkaat(int maksimiIka) : base(maksimiIka)
+        {
+
+        }
+
+        public Nisakkaat(string nimi, int ika, bool lihis) : base(nimi, ika, lihis)
+        {
+
+        }
     }
 }

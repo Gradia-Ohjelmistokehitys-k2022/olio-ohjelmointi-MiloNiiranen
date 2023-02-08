@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Elaimet
 {
-    internal class Class1
+    public class Papukaija : Linnut
     {
+        public Papukaija(int maksimiIka) : base(maksimiIka)
+        {
+        }
     }
 }

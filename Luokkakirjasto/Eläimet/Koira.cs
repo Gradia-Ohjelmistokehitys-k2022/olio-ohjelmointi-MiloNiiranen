@@ -4,7 +4,9 @@ namespace Elaimet
 {
     public class Koira:Nisakkaat
     {
-        string _haukku;
+        string _haukku;                                         
+
+        
 
         public Koira(string voice) : base(15)
         {
@@ -19,6 +21,10 @@ namespace Elaimet
         public void Haukkuu()
         {
             Console.WriteLine(_haukku + _haukku);
+        }
+        public void Aantele()
+        {
+            Haukkuu();
         }
     }
 }
