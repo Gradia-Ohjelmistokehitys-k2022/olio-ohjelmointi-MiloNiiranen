@@ -1,7 +1,4 @@
-﻿using System;
-using System.Data.SqlTypes;
-
-namespace Elaimet
+﻿namespace Elaimet
 {
     public class Elain
     {
@@ -9,10 +6,11 @@ namespace Elaimet
         private int _ika;
         private bool _onlihansyoja;
 
-   
+
+
         public Elain(int maksimiIka)
         {
-            _ika= Tool.GiveNumber(maksimiIka);
+            _ika = Tool.GiveNumber(maksimiIka);
             if (maksimiIka == 10)
             {
                 _nimi = "kisu";
@@ -27,15 +25,19 @@ namespace Elaimet
         {
             this._ika = ika;
             this._nimi = nimi;
-            _onlihansyoja= lihis;
+            _onlihansyoja = lihis;
         }
 
+        public string Aantele()
+        {
+            return "umph!";
+        }
 
         public bool PalautaOnLihanSyoja()
         {
             return _onlihansyoja;
         }
-    
+
         public string PalautaNimi()
         {
             return _nimi;
@@ -66,12 +68,12 @@ namespace Elaimet
         {
             if (_onlihansyoja)
             {
-                return " nimi on " + _nimi + " ja hän on " + _ika + " vuotias ja syö lihaa";
+                return "Nimi on " + _nimi + " ja hän on " + _ika + " vuotias ja syö lihaa";
             }
 
             else
             {
-                return " nimi on " + _nimi + " ja hän on " + _ika + " vuotias ja ei syö lihaa";
+                return "Nimi on " + _nimi + " ja hän on " + _ika + " vuotias ja ei syö lihaa";
             }
         }
         public bool AsetaOnLihansyoja()
@@ -81,7 +83,7 @@ namespace Elaimet
                 return true;
             }
             else
-            {  return false;}
+            { return false; }
         }
 
     }

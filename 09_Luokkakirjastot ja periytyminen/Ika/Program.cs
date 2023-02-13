@@ -1,6 +1,6 @@
-﻿using Eläimet;
+﻿using Elaimet;
 
-Kissa uusikissa = new Kissa("hrrrr ");
+Kissa uusikissa = new Kissa("hrrrr");
 Koira uusikoira = new Koira("Wuh ");
 Koira pepe = new Koira("Hau! ");
 
