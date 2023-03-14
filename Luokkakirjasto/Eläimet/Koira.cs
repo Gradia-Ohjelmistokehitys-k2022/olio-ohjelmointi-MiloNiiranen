@@ -20,7 +20,7 @@ namespace Elaimet
 
         public void Haukkuu()
         {
-            Console.WriteLine(_haukku + _haukku);
+            Console.WriteLine(_haukku);
         }
         public void Aantele()
         {
