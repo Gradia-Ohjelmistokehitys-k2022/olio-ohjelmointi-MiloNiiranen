@@ -1,11 +1,13 @@
-﻿namespace Elaimet
+﻿using System.ComponentModel.Design;
+
+namespace Elaimet
 {
     public class Elain
     {
         protected string _nimi;
         private int _ika;
         private bool _onlihansyoja;
-
+        
 
 
         public Elain(int maksimiIka)
@@ -85,6 +87,5 @@
             else
             { return false; }
         }
-
     }
 }

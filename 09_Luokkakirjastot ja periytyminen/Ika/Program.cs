@@ -4,7 +4,15 @@ Kissa uusikissa = new Kissa("hrrrr");
 Koira uusikoira = new Koira("Wuh ");
 Koira pepe = new Koira("Hau! ");
 
+Koira toinenkoira = new Koira("");
+Papukaija uusipapukaija = new Papukaija("");
 
+uusipapukaija.AsetaNimi("Kalle");
+uusipapukaija.AsetaIka(4);
+uusipapukaija.AsetaMunii(false);
+uusipapukaija.PalautaMunii();
+
+toinenkoira.AsetaSelkarankainen(false);
 
 pepe.Haukkuu();
 uusikoira.Haukkuu();
@@ -24,3 +32,4 @@ else
 {
     Console.WriteLine("Kissa on vanhempi");
 }
+

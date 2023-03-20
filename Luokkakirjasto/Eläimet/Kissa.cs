@@ -6,6 +6,7 @@ namespace Elaimet
         {
             string _kehräys;
 
+
             public Kissa(string voice) : base(10)
             {
                 _kehräys = voice;
