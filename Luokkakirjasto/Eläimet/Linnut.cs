@@ -22,7 +22,7 @@ namespace Elaimet
         }
         public bool PalautaMunii()
         {
-            if (true)
+            if (_munii)
                 return true;
 
             else 
