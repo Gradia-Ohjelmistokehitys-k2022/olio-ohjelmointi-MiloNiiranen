@@ -16,17 +16,20 @@ namespace Elaimet
 
         }
 
-        public void AsetaMunii(bool munii)
+        public bool AsetaMunii()
         {
-            _munii = munii;
+            if (_munii)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         public bool PalautaMunii()
         {
-            if (_munii)
-                return true;
-
-            else 
-                return false;
+            return _munii;
         }
     }
 }

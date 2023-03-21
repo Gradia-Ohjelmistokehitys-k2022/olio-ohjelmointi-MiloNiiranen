@@ -15,18 +15,22 @@ namespace Elaimet
 
         }
 
-        public void AsetaSelkarankainen(bool selkarankainen)
+        public bool AsetaSelkarankainen()
         {
-            _selkarankainen = selkarankainen;
+            if (_selkarankainen)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
         }
 
         public bool PalautaSelkarankainen()
         {
-            if (_selkarankainen)
-                return true;
-
-            else
-                return false;
+            return _selkarankainen;
         }
     }
 }

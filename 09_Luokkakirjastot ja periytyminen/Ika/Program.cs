@@ -9,10 +9,10 @@ Papukaija uusipapukaija = new Papukaija("");
 
 uusipapukaija.AsetaNimi("Kalle");
 uusipapukaija.AsetaIka(4);
-uusipapukaija.AsetaMunii(false);
-uusipapukaija.PalautaMunii();
 
-toinenkoira.AsetaSelkarankainen(false);
+toinenkoira.AsetaSelkarankainen();
+toinenkoira.PalautaSelkarankainen();
+Console.WriteLine(toinenkoira.PalautaSelkarankainen());
 
 pepe.Haukkuu();
 uusikoira.Haukkuu();
