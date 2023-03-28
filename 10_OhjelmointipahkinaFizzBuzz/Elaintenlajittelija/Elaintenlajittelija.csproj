@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Elaimet">
+      <HintPath>..\..\Luokkakirjasto\Eläimet\obj\Debug\net6.0\Elaimet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
