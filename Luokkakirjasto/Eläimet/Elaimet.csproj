@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Elaimet">
+      <HintPath>obj\Debug\net6.0\Elaimet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

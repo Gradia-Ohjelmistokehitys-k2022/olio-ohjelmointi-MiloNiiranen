@@ -1,26 +1,53 @@
 ﻿using System;
+using System.Security.Cryptography;
 
 namespace Elaimet
 {
-        public class Kissa : Nisakkaat
+    public class Kissa : Nisakkaat
+    {
+        string _kehräys;
+        private int _ika = 0;
+        private string _nimi = "";
+        List<Kissa> pennut = new List<Kissa>();
+
+
+        public Kissa() : base(10)
         {
-            string _kehräys;
+           
+        }
 
+        public Kissa(int age, string name, bool carnivore, string voice) : base(name, age, carnivore)
+        {
+            _kehräys = voice;
+        }
 
-            public Kissa(string voice) : base(10)
-            {
-                _kehräys = voice;
-            }
+        public void kehraa()
+        {
+            Console.WriteLine(_kehräys + _kehräys);
+        }
 
-            public Kissa(int age, string name, bool carnivore, string voice) : base(name, age, carnivore)
-            {
-                _kehräys = voice;
-            }
+        public override bool HyväKuulo()
+        {
+            return true;
+        }
+        public void PentujenTiedot()
+        {
+            Console.WriteLine("Pentuja on: " + pennut.Count);
+            Console.WriteLine("Pentujen ikä: " + _ika);
+        }
+        public string Nimi { get; set; }
+        public int Ika { get; set; }
+        public List<Kissa> Pennut { get; set; } = new List<Kissa>();
+        public Kissa Ema { get; set; }
 
-            public void kehraa()
-            {
-                Console.WriteLine(_kehräys + _kehräys);
-            }
+        public int LisaaPentu()
+        {
+            Kissa pentu = new Kissa { Ika = 0, Ema = this };
+            Pennut.Add(pentu);
+            return Pennut.Count;
 
         }
+        
+
+    }
 }

@@ -7,7 +7,7 @@ namespace Elaimet
         protected string _nimi;
         private int _ika;
         private bool _onlihansyoja;
-        
+
 
 
         public Elain(int maksimiIka)
@@ -70,12 +70,12 @@ namespace Elaimet
         {
             if (_onlihansyoja)
             {
-                return "Nimi on " + _nimi + " ja hän on " + _ika + " vuotias ja syö lihaa";
+                return "Nimi on " + _nimi + " ja hän on " + _ika + " vuotias ja syö lihaa {0}";
             }
 
             else
             {
-                return "Nimi on " + _nimi + " ja hän on " + _ika + " vuotias ja ei syö lihaa";
+                return "Nimi on " + _nimi + " ja hän on " + _ika + " vuotias ja ei syö lihaa ,{0}";
             }
         }
         public bool AsetaOnLihansyoja()
@@ -87,5 +87,24 @@ namespace Elaimet
             else
             { return false; }
         }
+
+        public virtual bool HyväKuulo()
+        {
+            return false;
+        }
+        public virtual bool HyväHajuaisti()
+        {
+            return false;
+        }
+        public virtual bool OsaaLentää()
+        {
+            return false;
+        }
+        public virtual bool Laukkaa()
+        {
+            return false;
+        }
+
+
     }
 }

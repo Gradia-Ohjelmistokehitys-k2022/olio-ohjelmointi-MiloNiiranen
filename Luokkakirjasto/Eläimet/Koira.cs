@@ -8,9 +8,9 @@ namespace Elaimet
 
         
 
-        public Koira(string voice) : base(15)
+        public Koira() : base(15)
         {
-           _haukku = voice;
+          
         }
 
         public Koira(int age, string name, bool carnivore, string voice) : base(name, age, carnivore)
@@ -25,6 +25,11 @@ namespace Elaimet
         public void Aantele()
         {
             Haukkuu();
+        }
+
+        public override bool HyväHajuaisti()
+        {
+            return true;
         }
     }
 }
