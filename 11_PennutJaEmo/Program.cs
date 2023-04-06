@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Elaimet;
 
 
 
@@ -32,7 +28,9 @@ namespace KissatJaEmo
     {
         static void Main(string[] args)
         {
-            // omaa koodia   
+            Kissa kissa1 = new Kissa();
+            Kissa kissa2 = new Kissa();
+            kissa1.LisääPentu();
         }
     }
 }
